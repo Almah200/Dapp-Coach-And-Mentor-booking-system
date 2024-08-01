@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coach and Mentor Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Coach and Mentor Booking System</h1>
+    </header>
+
+    <main>
+        <div class="intro">
+            <h2>Welcome to the Coach and Mentor Platform</h2>
+            <p>This platform empowers coaches and mentors in fields such as mental health, career guidance, and entrepreneurship by allowing them to offer their services globally. Clients can easily book sessions using cryptocurrency,
+            enabling coaches and mentors to create job opportunities for themselves without having to depend on traditional employment. Sessions are managed off-chain for flexibility and convenience.</p>
+        </div>
+        <div class="div">
+            <h1>These are the 4 sessions and it's prices in wei</h1>
+            <ul class="">Individual One Hour Session = 1 wei</ul>
+            <ul class="">Group One Hour Session = 3 wei</ul>
+            <ul class="">Individual One Month(4 weeks) = 5 wei</ul>
+            <ul class="">Group One Month(4 weeks) = 7 wei</ul>
+            <h3>You can pay by connecting your wallet and select the session you want and book</h3>
+            <h3>OR</h3>
+            <h3>Send the equavalet of the session you want wei to this smartcontract with this address: 0xaf2f356ff4bffb9bbc53390dff9435f0f7a2bd5d</h3>
+        </div>
+        
+        <div class="container">
+            <button id="connectButton">Connect Wallet</button>
+
+            <div class="form-group">
+                <label for="sessionType">Session Type (0-3):</label>
+                <input type="number" id="sessionType" min="0" max="3" />
+            </div>
+
+            <button id="bookSession">Book Session</button>
+            <button id="checkBalance">Check Balance</button>
+            <button id="withdrawFunds">Withdraw Funds</button>
+            <button id="getUserBookings">Get My Bookings</button>
+            <button id="getAllBookings">Get All Bookings</button>
+
+            <div id="messageContainer"></div>
+            <div id="bookingContainer"></div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.0/dist/ethers.umd.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
